@@ -1,6 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
+*::after, *::before { 
+  box-sizing: border-box;
+}
+
 body {
     margin: 0 auto;
     color: #3B2E5A;
@@ -146,13 +151,13 @@ a:active {
     width: 100%;
   }
   .website-title-container {
-    width: 100%;
+    width: 93%;
     display: flex;
     justify-content: space-between;
     align-items:center;
   }
   .website-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
   }
   .arrow-container {
@@ -170,26 +175,77 @@ a:active {
   .project-list {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   .card-container {
-    width: 100%;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    width: 45%;
+    height: 10rem;
     display: flex;
     flex-direction: row;
+    background-color: rgba(45, 64, 89, 0.3);
+    border-radius: 9px;
+    transition: 0.4s;
+  }
+  .card-container:hover {
+    transform: translate(0, -5px);
   }
 
-  .card-image {
-    width: 25%;
+  .card-name {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    background-color: #FFE3E3;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+  }
+  
+  .card-name p {
+    margin: 0 auto;
+    line-height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
   }
   .card-detail {
-    width:100%;
-    padding: 0.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .card-detail-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .card-link {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+  }
+   .card-button {
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(45, 64, 89, 0.3);
+    flex-basis: 100px;
+    color: #3B2E5A;
+  }
+  .card-button:hover {
+    background-color: #A1CAE2;
   }
 
   /* 화면 너비가 1200px보다 커질때 적용 */
   @media only screen and (min-width: 1200px) {
       .inner {
         max-width: 1200px;
+        overflow: hidden;
       }
   }
 
@@ -197,6 +253,12 @@ a:active {
     .skill-title{
       display: none;
     }
-  
+
+    #card-first {
+      width: 100%;
+    }
+    #card-second {
+      display: none;
+    }
   }
       
