@@ -227,7 +227,7 @@ a:active {
     padding-top: 1rem;
     justify-content: center;
   }
-   .card-button {
+  .card-button {
     margin-right: 1rem;
     text-align: center;
     font-size: 2rem;
@@ -240,7 +240,16 @@ a:active {
   .card-button:hover {
     background-color: #A1CAE2;
   }
-
+  footer {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    background-color: #3f464d;
+    color: #fff;
+  }
+  .footer-message {
+    font-weight: bold;
+    text-align: center;
+  }
   /* 화면 너비가 1200px보다 커질때 적용 */
   @media only screen and (min-width: 1200px) {
       .inner {
@@ -253,12 +262,16 @@ a:active {
     .skill-title{
       display: none;
     }
+    .arrow-container {
+      display: none;
+    }
 
-    #card-first {
+    .card-container {
       width: 100%;
     }
-    #card-second {
-      display: none;
+    
+    .project-list {
+      flex-direction: column;
     }
   }
       
