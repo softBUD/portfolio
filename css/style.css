@@ -172,20 +172,37 @@ a:active {
     font-size: 2rem;
     cursor: pointer;
   }
+  .project-container {
+    width: 1000px;
+    height:270px;
+    position: relative;
+    overflow: hidden;
+  }
+
   .project-list {
-    display: flex;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 1000px;
+    height: 250px;
     list-style: none;
     margin: 0;
     padding: 0;
+    transition:left 0.5 ease-out;
+  }
+  .project-list li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+  }
+
+  .project-list li {
+    float: left;
   }
 
   .card-container {
+    width: 1000px;
+    height: 250px;
     margin-top: 1rem;
-    margin-right: 2.5rem;
-    width: 45%;
-    height: 10rem;
-    display: flex;
-    flex-direction: row;
     background-color: rgba(45, 64, 89, 0.3);
     border-radius: 9px;
     transition: 0.4s;
@@ -218,7 +235,7 @@ a:active {
     margin-top: 2rem;
   }
   .card-detail-title {
-    font-size: 1.5rem;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -252,7 +269,6 @@ a:active {
   }
 
   #backtotop{
-    background-color: white;
     width: 40px;
     height: 40px;
     text-align: center;
@@ -282,7 +298,12 @@ a:active {
   #backtotop.show {
     opacity: 1;
     visibility: visible;
-    background-color: rgb(47,48,89);
+    background-color: rgb(52,58,59);
+  }
+
+  #backtotop.show:hover {
+    cursor: pointer;
+    background-color: #616161;
   }
   /* 화면 너비가 1200px보다 커질때 적용 */
   @media only screen and (min-width: 1200px) {
@@ -304,8 +325,5 @@ a:active {
       width: 100%;
     }
     
-    .project-list {
-      flex-direction: column;
-    }
   }
       
