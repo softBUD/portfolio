@@ -165,43 +165,43 @@ a:active {
     display: flex;
   }
   .slide-prev{
+    color: #3B2E5A;
     font-size: 2rem;
-    cursor: pointer;
   }
+
   .slide-next{
+    color: #3B2E5A;
     font-size: 2rem;
+  }
+
+  .slide-ready {
+    color: gray;
     cursor: pointer;
   }
-  .project-container {
+
+  #project-inner {
     width: 1000px;
-    height:270px;
-    position: relative;
+  }
+
+  .project-container {
+    width: 100%;
+    height: 400px;
     overflow: hidden;
   }
-
+  
   .project-list {
-    position: absolute;
-    left: 0;
-    top:0;
-    width: 1000px;
-    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 2560px;
+    height: 400px;
     list-style: none;
-    margin: 0;
     padding: 0;
-    transition:left 0.5 ease-out;
   }
-  .project-list li:not(:last-child){
-    float: left;
-    margin-right: 100px;
-  }
-
-  .project-list li {
-    float: left;
-  }
-
   .card-container {
+    display: flex;
     width: 1000px;
-    height: 250px;
+    height: 300px;
     margin-top: 1rem;
     background-color: rgba(45, 64, 89, 0.3);
     border-radius: 9px;
@@ -212,7 +212,7 @@ a:active {
   }
 
   .card-name {
-    width: 50%;
+    width: 300px;
     height: 100%;
     text-align: center;
     background-color: #FFE3E3;
@@ -227,12 +227,8 @@ a:active {
     font-weight: bold;
   }
   .card-detail {
-    display: flex;
-    flex-direction: column;
-    width:80%;
-    padding: 1rem;
-    font-size: 1rem;
-    margin-top: 2rem;
+    width: 600px;
+    margin-top: 1rem;
   }
   .card-detail-title {
     font-size: 20px;

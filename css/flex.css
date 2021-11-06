@@ -1,0 +1,72 @@
+#project {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.project-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: row;
+    width: 2560px;
+    height: 400px;
+    list-style: none;
+    padding: 0;
+
+  }
+  .card-container {
+    width: 1000px;
+    height: 300px;
+    background-color: rgba(45, 64, 89, 0.3);
+    border-radius: 9px;
+    transition: 0.4s;
+  }
+  .card-container:hover {
+    transform: translate(0, -5px);
+  }
+
+  .card-name {
+    width: 300px;
+    height: 100%;
+    text-align: center;
+    background-color: #FFE3E3;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+  }
+  
+  .card-name p {
+    margin: 0 auto;
+    line-height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .card-detail {
+    width: 600px;
+  }
+  .card-detail-title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .card-link {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+  }
+  .card-button {
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(45, 64, 89, 0.3);
+    flex-basis: 100px;
+    color: #3B2E5A;
+  }
+  .card-button:hover {
+    background-color: #A1CAE2;
+  }

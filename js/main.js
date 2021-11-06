@@ -21,3 +21,33 @@ window.addEventListener('scroll', checkScroll); //스크롤할때마다 함수�
 backToTop.addEventListener('click',moveBackToTop);
 
 /*-------------------------------------------------------------*/
+let curPos = 0; //현재 보고있는 li의 인덱스 번호
+let position = 0; //현재 ul의 위치값
+const IMAGE_WIDTH = 1000;
+const ulTag = document.querySelector(".project-list");
+const prevBtn = document.querySelector(".slide-prev");
+const nextBtn = document.querySelector(".slide-next");
+
+function init() {
+    prevBtn.addEventListener('click',prev);
+    nextBtn.addEventListener('click',next);
+}
+function prev() {
+    if(curPos > 0) { //인덱스 값이 0보다 커야실행
+    position += IMAGE_WIDTH;
+    console.log(position);
+    ulTag.style.transform = `translateX(${position}px)`;
+    curPos-=1;
+    } 
+}
+
+function next() {
+    if(curPos < 1){
+    position -= IMAGE_WIDTH;
+    console.log(position);
+    ulTag.style.transform = `translateX(${position}px)`;
+    curPos+=1;
+    } 
+}
+
+init();
