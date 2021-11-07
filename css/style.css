@@ -51,19 +51,23 @@ a:active {
       width: 100%;
       height: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: start;
       align-items:center;
   }
-  .head-container .head-title {
-      font-weight: bold;
-      font-size: 1.2rem;
-  }
-  .head-container .head-subtitle {
+  .head-container div:not(:first-child) {
+    margin: 20px;
     font-weight: bold;
     font-size: 1.2rem;
-}
+  }
+
+  .head-container .head-title {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-right: 30px;
+  }
+
   .head-container a:hover {
-  color: #3f464d;
+  color: grey;
   cursor: pointer;
 }
   section {
@@ -104,6 +108,50 @@ a:active {
     font-size: 3rem;
     color: #fff;
   }
+.about{
+  height: 600px;
+  background-color: #F4C7AB;
+}
+
+.about-title{
+  padding: 30px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.about-detail {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  
+}
+.about-img{
+  width: 400px;
+  height: 400px;
+  border-radius: 70%;
+  background-image: url("/img/about.jpg");
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+.about-name {
+  list-style: none;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.about-desc{
+  list-style: none;
+}
+.about-desc li{
+  font-size: 23px;
+  list-style: none;
+  font-weight: 400;
+}
+.about-blog, .about-github {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(45, 64, 89, 0.3);
+}
 
   .skill-container {
     width: 100%;
@@ -114,9 +162,16 @@ a:active {
   
   }
   .skills {
+    height: 600px;
     width: 100%;
     background-color: #A1CAE2;
   }
+  .skills-inner-title{
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
   .skill-detail{
     width: 100%;
     display: flex;
@@ -148,15 +203,17 @@ a:active {
     background-color: #fff;
   }
   .website-container {
+    margin-top: 30px;
     width: 100%;
   }
   .website-title-container {
-    width: 93%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items:center;
   }
   .website-title {
+    
     font-size: 3rem;
     font-weight: bold;
   }
@@ -197,6 +254,7 @@ a:active {
     height: 400px;
     list-style: none;
     padding: 0;
+
   }
   .card-container {
     display: flex;
@@ -211,30 +269,33 @@ a:active {
     transform: translate(0, -5px);
   }
 
-  .card-name {
+  .card-img {
     width: 300px;
     height: 100%;
-    text-align: center;
-    background-color: #FFE3E3;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
   }
   
-  .card-name p {
-    margin: 0 auto;
-    line-height: 100px;
-    font-size: 2rem;
-    font-weight: bold;
+  #card-fist-img {
+    background-image: url("/img/project1.jpg");
+  }
+  #card-second-img {
+    background-image: url("/img/Heartgram.png");
   }
   .card-detail {
     width: 600px;
     margin-top: 1rem;
   }
   .card-detail-title {
+    margin: 30px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
   }
-
+  .card-detail-desc{
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: left;
+  }
   .card-link {
     display: flex;
     padding-top: 1rem;
@@ -253,6 +314,20 @@ a:active {
   .card-button:hover {
     background-color: #A1CAE2;
   }
+  .contact .contact-container {
+    border-top:1px solid rgba(84, 98, 117, 0.425); 
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .contact-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .contact-detail {
+    margin:40px 0;
+  }
+
   footer {
     padding: 1rem 0;
     margin-top: 1rem;
@@ -294,7 +369,7 @@ a:active {
   #backtotop.show {
     opacity: 1;
     visibility: visible;
-    background-color: rgb(52,58,59);
+    background-color: rgb(45, 171, 194);
   }
 
   #backtotop.show:hover {
@@ -315,10 +390,6 @@ a:active {
     }
     .arrow-container {
       display: none;
-    }
-
-    .card-container {
-      width: 100%;
     }
     
   }
