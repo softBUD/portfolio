@@ -37,151 +37,164 @@
 
     <!-- 인터넷 익스플로러용 fabicon -->
     <link rel="short icon" type="image/x-icon" href="img/favicon-16x16.png"/>
+    <!-- goole font 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
 
-    <!-- css reset 우선적용 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- https://fontawesome.com/start -->
     <script src="https://kit.fontawesome.com/f1def33959.js" crossorigin="anonymous"></script>
-    <!-- Spoca Han Sans Neo: https://spoqa.github.io/spoqa-han-sans/ko-KR/ -->
-    <link href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    
 </head>
 <body>
-    <header>
-        <div class="inner">
-            <div class="head-container">
-                <div class="head-title"><a href="/index.html">Hye young Lee</a></div>
-                <div class="head-skill"><a href="">skills</a></div>
-                <div class="head-project"><a href="">project</a></div>
-                <div class="head-contact"><a href="">contact</a></div>
-            </div>
-        </div>
-    </header>
-    <!-- 메인섹션 -->
-    <section class="main">
-        <div class="main-container">
-            <div class="inner">
-                <div class="introduce-container">
-                    <div class="introduce">Hello world</div>
-                    <div class="message">Frontend developer Lee</div>
+    
+        <header>
+            <div class="head-container scrolled">
+                <div id="head-left">
+                    <div class="head-about"><a href="">about</a></div>
+                    <div class="head-skill"><a href="">skills</a></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <div class="inner">
-            <div class="about-container">
-                <div class="about-title">about</div>
-                <div class="about-detail">
-                    <div class="about-img"></div>
-                    <div class="about-desc">
-                        <div class="about-name">저는 프론트 개발자 이혜영입니다.</div>
-                        <div class="about-detail">대학 졸업 후 자바 스프링관련 국비교육을 수료하였으나 자바스크립트라는 언어에 매력을 느껴 프론트 개발자를 희망하게 되었습니다.</div>
-                        <div class="about-detail">자바스크립트를 공부하며 블로그에 기록하여 알고 있는 것들을 어떻게 표현할지 늘 고민하고 있습니다.</div>
-                        <div class="about-detail">구글링이 취미이고 정보를 탐색하고 지식을 확장하는 것을 좋아합니다.</div>
-                        <div class="about-detail">사용자에게 직관적이고 흥미로운 UX/UI를 구현하는 것에 관심이 많습니다.</div>
-                        <div class="about-detail">프론트엔드에 국한하지 않고 다양한 개발 프로세스를 경험하고자 노력하고 있습니다.</div>
-                        <div class="about-link">
-                            <div class="about-blog"><a href="https://today-1stday.tistory.com/"><div class="blog-icon"></div>Blog</a></div>
-                            <div class="about-github"><a href="https://github.com/softBUD"><div class="github-icon"></div>Github</a></div>
-                        </div>
-                    </div>
+                <h1 class="head-title"><a href="/index.html">softBUD</a></h1>
+                <div id="head-right">
+                    <div class="head-project"><a href="">project</a></div>
+                    <div class="head-contact"><a href="">contact</a></div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="skills"> 
-        <div class="skill-container">
+            </div> 
+        </header>
+        <!-- 메인섹션 -->
+        <section class="main">
+            <div class="main-container">
                 <div class="inner">
-                    <div class="skills-inner-title">Skills</div>
-                    <div class="skill-detail">
-                        <div class="skill-content">
-                            <img class="skill-icon" src="img/html.png" alt="html5">
-                            <div class="skill-title">HTML5</div>
-                        </div>
-                        <div class="skill-content">
-                            <img class="skill-icon" src="img/css.png"  alt="css">
-                            <div class="skill-title">CSS</div>
-                        </div>
-                        <div class="skill-content">
-                            <img class="skill-icon" src="img/JS.png" alt="javascript">
-                            <div class="skill-title">javaScript</div>
-                        </div>
+                    <div class="introduce-container">
+                        <div class="introduce">Hello</div>
+                        <div class="message">Frontend developer Lee</div>
                     </div>
-                    <div class="skill-detail">
-                        <div class="skill-content">
-                            <img class="skill-icon" src="img/github.png" alt="github">
-                            <div class="skill-title">GitHub</div>
+                </div>
+            </div>
+        </section>
+        <section class="scroll-section about" id="scroll-section-0">
+            <div class="inner">
+                <div class="about-container">
+                    <h2 class="about-title">about</div>
+                    <div class="about-detail">
+                        <div class="about-img"></div>
+                        <div class="about-desc">
+                            <div class="about-name">저는 프론트 개발자 이혜영입니다.</div>
+                            <div class="about-detail">대학 졸업 후 자바 백엔드관련 국비교육을 수료하였으나 자바스크립트라는 언어에 매력을 느껴 프론트 개발자를 희망하게 되었습니다.</div>
+                            <div class="about-detail">자바스크립트를 공부하며 블로그에 기록하여 알고 있는 것들을 어떻게 표현할지 늘 고민하고 있습니다.</div>
+                            <div class="about-detail">구글링이 취미이고 정보를 탐색하고 지식을 확장하는 것을 좋아합니다.</div>
+                            <div class="about-detail">사용자에게 직관적이고 흥미로운 UX/UI를 구현하는 것에 관심이 많습니다.</div>
+                            <div class="about-detail">프론트엔드에 국한하지 않고 다양한 개발 프로세스를 경험하고자 노력하고 있습니다.</div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="project">
-        <div class="inner">
-            <div class="website-container">
-                <div class="website-title-container">
-                    <div class="website-title">project</div>
-                    <div class="arrow-container">
-                        <i class="fas fa-chevron-left slide-prev slide-ready"></i>
-                        <i class="fas fa-chevron-right slide-next slide-ready"></i>
+        </section>
+        <section class="skills" id="scroll-section-1"> 
+            <div class="skill-container">
+                    <div class="inner">
+                        <div class="skills-inner-title">Skills</div>
+                        <div class="skill-detail">
+                            <div class="skill-content">
+                                <img class="skill-icon" src="img/html.png" alt="html5">
+                                <div class="skill-title">HTML5</div>
+                            </div>
+                            <div class="skill-content">
+                                <img class="skill-icon" src="img/css.png"  alt="css">
+                                <div class="skill-title">CSS</div>
+                            </div>
+                            <div class="skill-content">
+                                <img class="skill-icon" src="img/JS.png" alt="javascript">
+                                <div class="skill-title">javaScript</div>
+                            </div>
+                        </div>
+                        <div class="skill-detail">
+                            <div class="skill-content">
+                                <img class="skill-icon" src="img/github.png" alt="github">
+                                <div class="skill-title">GitHub</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- HTML5 에서는 data-변수이름=변수값 -->
-                <div id="project-inner"> 
-                    <!-- 슬라이드에서 제일 크게 감싸주는 inner에 보여질 li영역 너비 지정 -->
-                    <div class="project-container">
-                        <ul class="project-list">
-                            <li class="card-container" id="card-first">
-                                <div class="card-img" id="card-fist-img"></div>
-                                <div class="card-detail">
-                                    <div class="card-detail-title">개인 포트폴리오</div>
-                                    <div class="card-detail-desc">바닐라 자바스크립트로 제작한 포트폴리오 사이트입니다.</div>
-                                    <div class="card-link">
-                                        <div class="card-button"><i class="fab fa-git-square card-icon"></i></div>
-                                        <div class="card-button"><i class="fab fa-internet-explorer card-icon"></i></div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="card-container" id="card-second">
-                                <div class="card-img" id="card-second-img"></div>
-                                <div class="card-detail">
-                                    <div class="card-detail-title">하트그램</div>
-                                    <div class="card-link">
-                                        <div class="card-button"><i class="fab fa-git-square card-icon"></i></div>
-                                        <div class="card-button"><i class="fab fa-internet-explorer card-icon"></i></div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-        </div>
-    </section>
-    <section class="contact">
-        <div class="inner">
-            <div class="contact-container">
-                <div class="contact-title"></div>
-                <div class="contact-detail">
-                    <div class="contact-address">경북 경산시 거주</div>
-                    <div class="contact-new">서울 거주이전 예정</div>
-                    <div class="contact-email"><div class="mail-icon"></div>heyyo3608@gmail.com</div>
-                    <div class="contact-phone"><div class="tel-icon"></div>+82 010-5663-7339</div>
-                    <div class="contact-button">메일보내기</div>
-                </div>       
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="inner">
-            <div class="footer-message">2021 이혜영 All rights reserved</div>
-            <div class="footer-contact"></div>
-        </div>
-    </footer>
-    <a id="backtotop"></a>
-    <!-- 최신문법 구버전 브라우저에서 사용성 자동으로 변환 -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/babel" src="js/main.js"></script>
-</body>
+        </section>
+        <section class="project" id="scroll-section-">
+            <div class="inner">
+                <div class="website-container">
+                    <div class="website-title-container">
+                        <div class="website-title">project</div>
+                        <div class="arrow-container">
+                            <i class="fas fa-chevron-left slide-prev slide-ready"></i>
+                            <i class="fas fa-chevron-right slide-next slide-ready"></i>
+                        </div>
+                    </div>
+                    <!-- HTML5 에서는 data-변수이름=변수값 -->
+                    <div id="project-inner"> 
+                        <!-- 슬라이드에서 제일 크게 감싸주는 inner에 보여질 li영역 너비 지정 -->
+                        <div class="project-container">
+                            <ul class="project-list">
+                                <li class="card-container" id="card-first">
+                                    <div class="card-img" id="card-fist-img"></div>
+                                    <div class="card-detail">
+                                        <div class="card-detail-title">개인 포트폴리오</div>
+                                        <div class="card-detail-desc">바닐라 자바스크립트로 제작한 포트폴리오 사이트입니다.</div>
+                                        <div class="card-link">
+                                            <div class="card-button"><i class="fab fa-git-square card-icon"></i></div>
+                                            <div class="card-button"><i class="fab fa-internet-explorer card-icon"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="card-container" id="card-second">
+                                    <div class="card-img" id="card-second-img"></div>
+                                    <div class="card-detail">
+                                        <div class="card-detail-title">하트그램</div>
+                                        <div class="card-link">
+                                            <div class="card-button"><i class="fab fa-git-square card-icon"></i></div>
+                                            <div class="card-button"><i class="fab fa-internet-explorer card-icon"></i></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="inner">
+                <div class="contact-container">
+                    <div class="contact-title"></div>
+                    <div class="contact-detail">
+                        <div class="contact-address">경북 경산시 거주</div>
+                        <div class="contact-new">서울 거주이전 예정</div>
+                        <div class="contact-email"><div class="mail-icon"></div>heyyo3608@gmail.com</div>
+                        <div class="contact-phone"><div class="tel-icon"></div>+82 010-5663-7339</div>
+                        <div class="contact-button">메일보내기</div>
+                    </div>       
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="footer-message">2021 이혜영 All rights reserved</div>
+                <div class="footer-contact"></div>
+            </div>
+        </footer>
+        <a id="backtotop"></a>
+        <!-- 최신문법 구버전 브라우저에서 사용성 자동으로 변환 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js" integrity="sha512-pBSlhNUvB+td6sjW1zmR6L7c7kVWR4octUPl4tfHmzO63424nxta8aLmficEcAAswQmRqTiToi63AazDurj/Sg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="text/babel" src="js/main.js"></script>
+        <script type="text/babel" src="js/scroll.js"></script>
+    </body>
 </html>

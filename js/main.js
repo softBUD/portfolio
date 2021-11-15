@@ -1,14 +1,20 @@
 const backToTop = document.getElementById('backtotop');
+const head = document.getElementsByClassName('head-container');
 
 function checkScroll() {
-    /*웹페이지가 얼마나 스크롤 되어있는지 확인하는 값(픽셀단위로 반환)
-    */
-   let pageYOffset = window.pageYOffset;
-   if (pageYOffset !=0) {
-       backToTop.classList.add('show');
-   } else {
-       backToTop.classList.remove('show');
-   }
+    /*웹페이지가 얼마나 스크롤 되어있는지 확인하는 값(픽셀단위로 반환)*/
+    let pageYOffset = window.pageYOffset;
+    
+    if (pageYOffset !=0) {
+        backToTop.classList.add('show');
+    } else {
+        backToTop.classList.remove('show');
+    }
+    if (pageYOffset !=0) {
+        head.classList.add('scrolled');
+    } else {
+        head.classList.remove('scrolled');
+    }
 }
 
 function moveBackToTop() {
@@ -47,7 +53,7 @@ function next() {
     console.log(position);
     ulTag.style.transform = `translateX(${position}px)`;
     curPos+=1;
-    } 
+    }  
 }
 
 init();
