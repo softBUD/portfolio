@@ -9,6 +9,7 @@ body {
   position: relative;
 }
 html {
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
@@ -43,10 +44,9 @@ position: fixed;
 top: 0;
 right: 0;
 left: 0;
-height: 56px;
+height: 60px;
 z-index: 1000;
 }
-
 .head-container {
 padding: 10px 0;
 display: flex;
@@ -54,9 +54,8 @@ justify-content: space-between;
 width: 100%;
 align-items:center;
 }
-.head-container.scrolled {
-  
-}
+
+
 .head-container div {
   cursor: pointer;
   font-weight: 400;
@@ -137,7 +136,7 @@ background: linear-gradient(360deg, rgba(195,34,167,0.48252804539784666) 0%, rgb
 .about-title{
   text-align: center;
   margin: 0;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -169,25 +168,23 @@ background: linear-gradient(360deg, rgba(195,34,167,0.48252804539784666) 0%, rgb
 .about-detail{
   font-size: 18px;
 }
-
-  .skill-container {
+.skills {
+  height: 600px;
+  width: 100%;
+  background-color: #fff;
+}
+.skill-container {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  
-  }
-  .skills {
-    height: 600px;
-    width: 100%;
-    background-color: #fff;
-  }
-  .skills-inner-title{
+}
+
+.skills-inner-title{
+    margin: 0 auto;
+    text-align: center;
     margin-top: 20px;
     font-size: 3rem;
     font-weight: bold;
-  }
+}
 
   .skill-detail{
     width: 100%;

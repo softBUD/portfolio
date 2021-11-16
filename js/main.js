@@ -1,19 +1,19 @@
 const backToTop = document.getElementById('backtotop');
-const head = document.getElementsByClassName('head-container');
+const headScroll = document.querySelector('header');
+
 
 function checkScroll() {
     /*웹페이지가 얼마나 스크롤 되어있는지 확인하는 값(픽셀단위로 반환)*/
-    let pageYOffset = window.pageYOffset;
+    let pageYOffset = window.pageYOffset;    
     
     if (pageYOffset !=0) {
         backToTop.classList.add('show');
+    } if(pageYOffset > 100) {
+        
+        headScroll.style.backgroundColor = '#EEEEEE';
     } else {
         backToTop.classList.remove('show');
-    }
-    if (pageYOffset !=0) {
-        head.classList.add('scrolled');
-    } else {
-        head.classList.remove('scrolled');
+        headScroll.style.backgroundColor = 'transparent';
     }
 }
 
